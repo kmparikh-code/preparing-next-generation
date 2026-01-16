@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparing the Next Generation for Wealth Stewardship | Mossy Creek Wealth</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #222326;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 20px;
+        }
+
+        .logo {
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #00477a;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+
+        .subheadline {
+            font-size: 1.25rem;
+            color: #506e91;
+            margin-bottom: 30px;
+        }
+
+        .trent-input-section {
+            background-color: #f8f9fa;
+            border: 2px dashed #00477a;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 30px 0;
+        }
+
+        .trent-input-section h4 {
+            color: #00477a;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .trent-input-section p {
+            font-size: 0.9rem;
+            color: #506e91;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .video-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .icon-boxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .icon-box {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 2px solid #007749;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,119,73,0.15);
+            transition: all 0.3s ease;
+        }
+
+        .icon-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,119,73,0.25);
+            border-color: #00477a;
+        }
+
+        .icon-box-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .icon-box h3 {
+            font-size: 1.25rem;
+            color: #00477a;
+            margin-bottom: 10px;
+        }
+
+        .icon-box p {
+            color: #506e91;
+            font-size: 1rem;
+        }
+
+        .advisor-callout {
+            background: linear-gradient(135deg, #007749 0%, #00477a 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,71,122,0.2);
+        }
+
+        .advisor-callout h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .advisor-callout p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .section {
+            margin: 60px 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: #00477a;
+            margin-bottom: 20px;
+        }
+
+        .problem-statement {
+            background-color: #f8f9fa;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px 0;
+        }
+
+        .problem-statement p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .stat-highlight {
+            background-color: #007749;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .stat-highlight .number {
+            font-size: 3.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-highlight .description {
+            font-size: 1.1rem;
+        }
+
+        .stat-highlight a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .stat-highlight a:hover {
+            opacity: 0.8;
+        }
+
+        .collapsible-section {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .collapsible-header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+
+        .collapsible-header:hover {
+            background-color: #e9ecef;
+        }
+
+        .collapsible-header h3 {
+            font-size: 1.25rem;
+            color: #00477a;
+            margin: 0;
+        }
+
+        .collapsible-arrow {
+            font-size: 1.5rem;
+            color: #007749;
+            transition: transform 0.3s;
+        }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .collapsible-content-inner {
+            padding: 20px;
+        }
+
+        .collapsible-content-inner p {
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .collapsible-content-inner ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .collapsible-content-inner li {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .highlight-sentence {
+            background-color: #fff3cd;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+            color: #00477a;
+        }
+
+        .collapsible-section.active .collapsible-arrow {
+            transform: rotate(180deg);
+        }
+
+        .lead-magnet {
+            background-color: #00477a;
+            color: white;
+            padding: 50px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .lead-magnet h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .lead-magnet p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .email-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-note {
+            background-color: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            color: #222326;
+            background-color: white;
+        }
+
+        input[type="email"]::placeholder {
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: #007749;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #005a38;
+        }
+
+        .btn-secondary {
+            background-color: #00477a;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background-color: #003558;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+            padding: 40px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #506e91;
+        }
+
+        footer {
+            background-color: #e8e9eb;
+            color: #222326;
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-contact {
+            margin-bottom: 30px;
+        }
+
+        .footer-contact p {
+            margin: 10px 0;
+        }
+
+        .footer-contact p strong {
+            font-size: 1.5rem;
+            color: #00477a;
+        }
+
+        .footer-contact a {
+            color: #00477a;
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-disclosure {
+            font-size: 0.875rem;
+            color: #506e91;
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+
+        .footer-disclosure a {
+            color: #00477a;
+            text-decoration: none;
+        }
+
+        .footer-disclosure a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .subheadline {
+                font-size: 1.1rem;
+            }
+
+            .icon-boxes {
+                grid-template-columns: 1fr;
+            }
+
+            .stat-highlight .number {
+                font-size: 2.5rem;
+            }
+
+            .lead-magnet {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="Mossy_x_Farther_-_horizontal.png" alt="Mossy Creek Wealth at Farther" class="logo">
+            
+            <h1>Preparing the Next Generation for Wealth Stewardship</h1>
+            <p class="subheadline">The difference between a legacy that lasts and one that doesn't</p>
+            
+            <div class="trent-input-section">
+                <h4>Trent: Answer these 4 questions (keep each to 2-3 sentences):</h4>
+                <p><strong>1.</strong> What's one money lesson you've already taught your kids that you're proud of?</p>
+                <p><strong>2.</strong> When did you realize your kids were paying attention to how you handle money?</p>
+                <p><strong>3.</strong> What do you want your kids to remember most about how your family approaches wealth?</p>
+                <p><strong>4.</strong> How does your experience with this topic help clients?</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="video-section">
+        <div class="container">
+            <video controls>
+                <source src="https://content.bombbomb.com/fa57ed40-6506-4848-af1a-fb3ac7a87a59_H264Main.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="icon-boxes">
+            <div class="icon-box">
+                <div class="icon-box-icon">⏱</div>
+                <h3>Start Early</h3>
+                <p>The best time to begin was 10 years ago. The second best time is now.</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon-box-icon">✓</div>
+                <h3>Build Confidence</h3>
+                <p>Kids who understand wealth make better decisions with it.</p>
+            </div>
+            <div class="icon-box">
+                <div class="icon-box-icon">📁</div>
+                <h3>Protect Your Legacy</h3>
+                <p>Preparation today prevents costly mistakes tomorrow.</p>
+            </div>
+        </div>
+
+        <div class="advisor-callout">
+            <h3>When Should Kids Meet Your Advisor?</h3>
+            <p>Starting in their mid-to-late teens, your children should begin meeting with your financial advisor. These early introductions help them understand what a trusted advisory relationship looks like—and research shows kids who meet advisors as teens are far more likely to maintain that relationship after inheriting wealth.</p>
+        </div>
+
+        <div class="problem-statement">
+            <h2>The Problem Most Wealthy Parents Face</h2>
+            <p>You've worked hard to build wealth. You've made smart decisions, saved consistently, and planned carefully.</p>
+            
+            <p>But here's what keeps a lot of parents up at night: <strong>What happens when this wealth transfers to your kids?</strong></p>
+            
+            <div class="stat-highlight">
+                <span class="number">72%</span>
+                <span class="description">According to a <a href="https://www.citizensbank.com/learning/great-wealth-transfer-survey.aspx" target="_blank">2024 Citizens Bank survey of 1,500 Americans</a>, 72% don't feel confident in their ability to manage a financial windfall.</span>
+            </div>
+
+            <p>It's not because kids are irresponsible. It's because most families never prepare them.</p>
+
+            <p>They assume kids will "figure it out" when the time comes. They worry that talking about money too early will ruin their work ethic. They fear the conversation will be awkward.</p>
+
+            <p>So they wait. And often, they wait too long.</p>
+
+            <p><strong>The truth:</strong> Preparing the next generation isn't about teaching them to manage a portfolio. It's about instilling values, building competence, and creating a shared understanding of what wealth means to your family.</p>
+        </div>
+
+        <section class="section">
+            <h2>3 Things You Need to Know About Preparing Heirs</h2>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>1. "The Money Talk" Should Start Way Earlier Than You Think</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>Most parents wait until their kids are in their 20s or 30s to start talking about family wealth. By then, you've already missed the most important years.</p>
+                        
+                        <p>The reality: Kids start forming beliefs about money around age 7. By their early teens, many of those beliefs are set.</p>
+                        
+                        <p>That doesn't mean you need to tell your 10-year-old about your net worth. But you do need to start teaching basic concepts: saving, delayed gratification, the difference between wants and needs, and most importantly, the values your family has around money.</p>
+                        
+                        <p>Waiting until they're adults means you're not teaching them - you're correcting them. And that's a much harder conversation.</p>
+                        
+                        <p>Start age-appropriate conversations early. Build on them as your kids grow. By the time they're ready to inherit, money won't be a mysterious or scary topic - it'll be something they've been learning about their entire lives.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>2. Your Estate Plan Isn't a Wealth Transfer Plan</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>A lot of families think they're "prepared" because they have an estate plan. Trusts are set up. Beneficiaries are named. Documents are signed.</p>
+                        
+                        <p>But an estate plan just tells the money where to go. It doesn't prepare your kids to receive it.</p>
+                        
+                        <p>Think about it this way: If you were handing your kids the keys to a car, you'd make sure they knew how to drive first, right? You wouldn't just throw them the keys and hope for the best.</p>
+                        
+                        <p>Wealth is the same way. The legal structure matters, but the preparation matters more.</p>
+                        
+                        <p>That means teaching them about investments, taxes, and cash flow management. Involving them in family financial discussions. Letting them make small financial decisions (and mistakes) while the stakes are low. Explaining the "why" behind your wealth transfer decisions.</p>
+                        
+                        <p>Your estate plan is step one. Your wealth education plan is step two. You need both.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>3. Your Kids Are Watching (Even When You Think They're Not)</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>You might think your kids don't notice how you handle money. But they do. Every single day.</p>
+                        
+                        <p>They watch how you tip at restaurants. How you talk about your job. Whether you stress about bills or feel confident. How you react when something breaks. Whether you comparison shop or impulse buy. How you handle unexpected expenses.</p>
+                        
+                        <p>They're absorbing lessons about money constantly - whether you're teaching them or not.</p>
+                        
+                        <p>And here's the thing: What they observe will shape them more than anything you say in a formal "money talk" years later.</p>
+                        
+                        <p>If you want your kids to be responsible with money, you can't just tell them to be responsible. You have to show them what that looks like. That means being intentional about the financial behaviors you're modeling - and occasionally narrating your thought process so they understand why you make the choices you do.</p>
+                        
+                        <p>The good news? You're already teaching them about money every day. The question is: What lessons are they learning?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="lead-magnet">
+            <h2>Get the Complete Guide</h2>
+            <p>Download our free guide with age-by-age conversation strategies, what to teach at every stage, and the 5 biggest mistakes parents make.</p>
+            
+            <div class="email-form">
+                <div class="form-note">
+                    [MOCKUP - Real download will happen after HubSpot email capture - Ryan to implement this functionality]
+                </div>
+                <input type="email" placeholder="Enter your email address" disabled>
+                <button class="btn btn-primary" disabled>Download the Free Guide</button>
+            </div>
+        </div>
+
+        <section class="section">
+            <h2>What to Discuss at Every Age</h2>
+            <p style="margin-bottom: 30px;">Click on each age range to see what to teach:</p>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 5-10: Foundation</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>At this stage, money is simple and tangible. Focus on teaching that money has value and that choices have consequences. Kids this age are ready to understand the basics without feeling overwhelmed.</p>
+                        <ul>
+                            <li>Teach delayed gratification through saving for small goals</li>
+                            <li>Explain the difference between needs and wants</li>
+                            <li>Let them earn money through age-appropriate chores</li>
+                            <li>Show them how to save, spend, and share (charitable giving)</li>
+                            <li>Model positive money behaviors in everyday situations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 11-15: Building Understanding</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>Middle school years are perfect for introducing banking basics and the concept of growing wealth. They're old enough to grasp more complex ideas but still receptive to guidance. Start involving them in real family financial discussions at an age-appropriate level.</p>
+                        <ul>
+                            <li>Open a checking account and teach them how to manage it</li>
+                            <li>Explain interest, compound growth, and basic investing concepts</li>
+                            <li>Involve them in family discussions about vacation budgets or large purchases</li>
+                            <li>Introduce the concept of different types of income (earned vs. passive)</li>
+                            <li>Teach them about taxes and how money is earned</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 16-18: Developing Responsibility</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>High school years are crucial for hands-on financial responsibility. Let them make real decisions and even mistakes while the stakes are still relatively low. <span class="highlight-sentence">This is also when they can start meeting your financial advisor to understand what that relationship looks like.</span></p>
+                        <ul>
+                            <li>Help them manage their first paycheck and create a budget</li>
+                            <li>Teach them about taxes, deductions, and reading a pay stub</li>
+                            <li>Discuss student loans, scholarships, and college financing options</li>
+                            <li>Introduce them to your financial advisor for college planning discussions</li>
+                            <li>Let them practice making spending vs. saving decisions on their own</li>
+                            <li>Explain credit, credit scores, and responsible borrowing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 18-25: Active Learning</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>Young adulthood is when financial decisions start having long-term consequences. They're making career choices, possibly taking on student debt, and beginning to save for retirement. This is when their relationship with your advisor should become active and ongoing, not just occasional check-ins.</p>
+                        <ul>
+                            <li>Help them understand 401(k)s, Roth IRAs, and early retirement savings</li>
+                            <li>Discuss student loan repayment strategies and refinancing options</li>
+                            <li>Bring them to advisor meetings to learn about investment strategies</li>
+                            <li>Start introducing the broader family wealth picture (without overwhelming them)</li>
+                            <li>Teach them about insurance, emergency funds, and financial safety nets</li>
+                            <li>Help them navigate early career financial decisions and salary negotiations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 25-35: Growing Involvement</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>By their late 20s and 30s, your children should be active participants in family wealth conversations. They're likely established in their careers, possibly married, and ready to understand more about your estate plan and investment philosophy. Regular advisor meetings become essential.</p>
+                        <ul>
+                            <li>Include them in regular meetings with your financial advisor</li>
+                            <li>Explain your investment philosophy and why you make certain choices</li>
+                            <li>Start discussing your estate plan, trusts, and how wealth will transfer</li>
+                            <li>Involve them in family decisions about real estate, business interests, or major assets</li>
+                            <li>Teach them about tax planning, charitable giving strategies, and wealth preservation</li>
+                            <li>Help them establish their own financial advisory relationships if needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapsible-section">
+                <div class="collapsible-header" onclick="toggleCollapse(this)">
+                    <h3>Ages 35+: Preparing for Leadership</h3>
+                    <span class="collapsible-arrow">▼</span>
+                </div>
+                <div class="collapsible-content">
+                    <div class="collapsible-content-inner">
+                        <p>By this stage, your adult children should have full transparency about family wealth and an active role in major financial decisions. They need to be prepared to work with advisors independently and, eventually, make decisions about the family's financial future on their own.</p>
+                        <ul>
+                            <li>Provide complete transparency about the size and structure of family wealth</li>
+                            <li>Give them an active role in family investment and estate planning decisions</li>
+                            <li>Ensure they have their own relationships with your advisors (not just as "your kids")</li>
+                            <li>Discuss succession planning for family businesses or leadership roles</li>
+                            <li>Teach them how to evaluate advisors and make decisions about changing strategies</li>
+                            <li>Help them develop their own wealth transfer plans for the next generation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-section">
+            <h2>Ready to Start the Conversation?</h2>
+            <p>Not sure where to begin? We can help you create a plan that fits your family's unique situation.</p>
+            <a href="https://meetings.hubspot.com/trent-byerly/website-client-trent-virtual-meeting?uuid=2616e857-d5ee-4649-b8d0-44bbe4163ef1" class="btn btn-secondary">Schedule a Conversation</a>
+            
+            <div style="margin-top: 40px;">
+                <p><strong>Still Have Questions?</strong></p>
+                <p>Call us at <a href="tel:540-248-4343" style="color: #00477a; text-decoration: none; font-weight: bold;">540-248-4343</a> or email <a href="mailto:hello@mcreekwealth.com" style="color: #00477a; text-decoration: none; font-weight: bold;">hello@mcreekwealth.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-contact">
+                <p><strong>Mossy Creek Wealth</strong></p>
+                <p>4186 Scenic Highway, Mount Solon, VA 22843</p>
+                <p>Phone: <a href="tel:540-248-4343">540-248-4343</a> | Email: <a href="mailto:hello@mcreekwealth.com">hello@mcreekwealth.com</a></p>
+            </div>
+
+            <div class="footer-disclosure">
+                <p>Advisory services provided by Farther Finance Advisors LLC, an SEC-registered investment advisor. For more details, see our disclosures in <a href="https://drive.google.com/file/d/15PrS0lcKRTwdiHJ1xVmRPIwja2uNkhRr/view?usp=sharing" target="_blank">Form ADV Part 2</a>. By using this website, you understand the information being presented is provided for informational purposes only and agree to our <a href="https://drive.google.com/file/d/1TtqOr5uJ6Ct-XoFWNbN9dkSPHW1C5DfO/view?usp=sharing" target="_blank">Terms of Use</a> and <a href="https://drive.google.com/file/d/1CC_i35jGa8XCu24u0V37eeoUeO3wEynv/view?usp=sharing" target="_blank">Privacy Policy</a>.</p>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 0.875rem; color: #506e91;">&copy; 2026 Mossy Creek Wealth. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleCollapse(header) {
+            const section = header.parentElement;
+            const content = section.querySelector('.collapsible-content');
+            const isActive = section.classList.contains('active');
+            
+            if (isActive) {
+                section.classList.remove('active');
+                content.style.maxHeight = null;
+            } else {
+                section.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
